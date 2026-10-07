@@ -8,7 +8,7 @@
 // API URL
 // ==========================================
 
-const API_URL = "https://mental-health-score-2-hpho.onrender.com";
+const API_URL = "https://mental-health-score-2-hpho.onrender.com/predict";
 
 
 // ==========================================
