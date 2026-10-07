@@ -1,179 +1,149 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>MindScore AI</title>
 
-    <link rel="stylesheet"
-          href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
-
-<!-- Background decorations -->
-
-<div class="background-circle circle-one"></div>
-<div class="background-circle circle-two"></div>
-
-
-<!-- Main Container -->
-
-<div class="main-container">
-
+    <!-- Background -->
+    <div class="background-grid"></div>
 
     <!-- ================= HEADER ================= -->
 
-    <header class="hero">
+    <header class="header">
 
-        <div class="brand">
-
-            <div class="brand-icon">
+        <div class="logo">
+            <div class="logo-icon">
                 🧠
             </div>
 
             <div>
-
-                <h1>
-                    MindScore <span>AI</span>
-                </h1>
-
-                <p>
-                    Mental Health Prediction System
-                </p>
-
+                <h2>MindScore <span>AI</span></h2>
+                <p>Smart Mental Health Prediction</p>
             </div>
-
         </div>
 
-
         <div class="status">
-
             <span class="status-dot"></span>
-
-            AI Model Online
-
+            AI MODEL ONLINE
         </div>
 
     </header>
 
 
+    <!-- ================= MAIN ================= -->
 
-    <!-- ================= HERO ================= -->
+    <main class="container">
 
-    <section class="hero-content">
+        <!-- HERO -->
 
-        <div>
+        <section class="hero">
 
-            <div class="badge">
-                ✨ MACHINE LEARNING POWERED
-            </div>
+            <div class="hero-text">
 
+                <div class="badge">
+                    ✦ AI POWERED PREDICTION
+                </div>
 
-            <h2>
-                Understand Your
-                <span>Mental Health Score</span>
-            </h2>
-
-
-            <p class="hero-description">
-
-                Enter your lifestyle, academic and
-                social media information. Our machine
-                learning model will estimate your
-                mental health score.
-
-            </p>
-
-        </div>
-
-
-        <div class="brain-visual">
-
-            <div class="brain-glow">
-
-                🧠
-
-            </div>
-
-            <div class="floating-card card-one">
-                📊 ML Model
-            </div>
-
-            <div class="floating-card card-two">
-                ⚡ Fast Prediction
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= FORM CARD ================= -->
-
-    <section class="form-card">
-
-
-        <div class="section-heading">
-
-            <div class="section-icon">
-                👤
-            </div>
-
-            <div>
-
-                <h3>
-                    Student Information
-                </h3>
+                <h1>
+                    Understand Your
+                    <span>Mental Health</span>
+                    Score
+                </h1>
 
                 <p>
-                    Tell us a little about yourself
+                    Enter your lifestyle, academic and social media
+                    information to generate an AI-powered mental
+                    health score.
                 </p>
 
             </div>
 
-        </div>
+
+            <!-- AI VISUAL -->
+
+            <div class="ai-visual">
+
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+                <div class="orbit orbit-3"></div>
+
+                <div class="ai-core">
+                    🧠
+                </div>
+
+                <div class="floating-card card-1">
+                    <span>📊</span>
+                    <div>
+                        <small>AI Analysis</small>
+                        <strong>Active</strong>
+                    </div>
+                </div>
+
+                <div class="floating-card card-2">
+                    <span>⚡</span>
+                    <div>
+                        <small>Prediction</small>
+                        <strong>Ready</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
 
 
+        <!-- ================= FORM ================= -->
 
-        <form id="predictionForm">
+        <section class="form-card">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">
+                        PERSONAL INFORMATION
+                    </span>
+
+                    <h2>
+                        Tell us about yourself
+                    </h2>
+                </div>
+
+                <div class="step">
+                    STEP 01
+                </div>
+
+            </div>
 
 
-            <!-- BASIC INFORMATION -->
-
-            <div class="form-section">
-
-                <h4>
-                    Basic Information
-                </h4>
+            <form id="predictionForm">
 
 
-                <div class="grid">
+                <!-- ROW 1 -->
 
+                <div class="form-grid">
 
                     <div class="input-group">
 
-                        <label>
+                        <label for="age">
                             Age
                         </label>
 
@@ -189,17 +159,15 @@
                     </div>
 
 
-
                     <div class="input-group">
 
-                        <label>
+                        <label for="gender">
                             Gender
                         </label>
 
-                        <select id="gender"
-                                required>
+                        <select id="gender" required>
 
-                            <option value="">
+                            <option value="" disabled selected>
                                 Select gender
                             </option>
 
@@ -216,10 +184,9 @@
                     </div>
 
 
-
                     <div class="input-group">
 
-                        <label>
+                        <label for="country">
                             Country
                         </label>
 
@@ -233,10 +200,9 @@
                     </div>
 
 
-
                     <div class="input-group">
 
-                        <label>
+                        <label for="academic_level">
                             Academic Level
                         </label>
 
@@ -245,8 +211,8 @@
                             required
                         >
 
-                            <option value="">
-                                Select academic level
+                            <option value="" disabled selected>
+                                Select level
                             </option>
 
                             <option value="High School">
@@ -267,25 +233,14 @@
 
                 </div>
 
-            </div>
 
+                <!-- ROW 2 -->
 
-
-            <!-- SOCIAL MEDIA -->
-
-            <div class="form-section">
-
-                <h4>
-                    Social Media Usage
-                </h4>
-
-
-                <div class="grid">
-
+                <div class="form-grid">
 
                     <div class="input-group">
 
-                        <label>
+                        <label for="most_used_platform">
                             Most Used Platform
                         </label>
 
@@ -294,32 +249,31 @@
                             required
                         >
 
-                            <option value="">
+                            <option value="" disabled selected>
                                 Select platform
                             </option>
 
-                            <option>Facebook</option>
-                            <option>LinkedIn</option>
-                            <option>Instagram</option>
-                            <option>Snapchat</option>
-                            <option>Twitter</option>
-                            <option>YouTube</option>
-                            <option>TikTok</option>
-                            <option>LINE</option>
-                            <option>KakaoTalk</option>
-                            <option>VKontakte</option>
-                            <option>WhatsApp</option>
-                            <option>WeChat</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Snapchat">Snapchat</option>
+                            <option value="Twitter">Twitter</option>
+                            <option value="YouTube">YouTube</option>
+                            <option value="TikTok">TikTok</option>
+                            <option value="LINE">LINE</option>
+                            <option value="KakaoTalk">KakaoTalk</option>
+                            <option value="VKontakte">VKontakte</option>
+                            <option value="WhatsApp">WhatsApp</option>
+                            <option value="WeChat">WeChat</option>
 
                         </select>
 
                     </div>
 
 
-
                     <div class="input-group">
 
-                        <label>
+                        <label for="purpose_of_use">
                             Purpose of Use
                         </label>
 
@@ -328,23 +282,23 @@
                             required
                         >
 
-                            <option value="">
+                            <option value="" disabled selected>
                                 Select purpose
                             </option>
 
-                            <option>
+                            <option value="Networking">
                                 Networking
                             </option>
 
-                            <option>
+                            <option value="Education">
                                 Education
                             </option>
 
-                            <option>
+                            <option value="Entertainment">
                                 Entertainment
                             </option>
 
-                            <option>
+                            <option value="News">
                                 News
                             </option>
 
@@ -353,12 +307,10 @@
                     </div>
 
 
-
                     <div class="input-group">
 
-                        <label>
-                            Daily Usage
-                            <span>(Hours)</span>
+                        <label for="avg_daily_usage_hours">
+                            Daily Usage Hours
                         </label>
 
                         <input
@@ -367,17 +319,16 @@
                             min="0"
                             max="24"
                             step="0.1"
-                            placeholder="e.g. 5.5"
+                            placeholder="e.g. 4.5"
                             required
                         >
 
                     </div>
 
 
-
                     <div class="input-group">
 
-                        <label>
+                        <label for="daily_unlocks">
                             Daily Unlocks
                         </label>
 
@@ -385,7 +336,7 @@
                             type="number"
                             id="daily_unlocks"
                             min="0"
-                            placeholder="e.g. 50"
+                            placeholder="e.g. 25"
                             required
                         >
 
@@ -393,27 +344,15 @@
 
                 </div>
 
-            </div>
 
+                <!-- ROW 3 -->
 
-
-            <!-- LIFESTYLE -->
-
-            <div class="form-section">
-
-                <h4>
-                    Lifestyle & Wellbeing
-                </h4>
-
-
-                <div class="grid">
-
+                <div class="form-grid">
 
                     <div class="input-group">
 
-                        <label>
-                            Study Hours
-                            <span>/ day</span>
+                        <label for="study_hours">
+                            Study Hours / Day
                         </label>
 
                         <input
@@ -422,19 +361,17 @@
                             min="0"
                             max="24"
                             step="0.1"
-                            placeholder="e.g. 6"
+                            placeholder="e.g. 5"
                             required
                         >
 
                     </div>
 
 
-
                     <div class="input-group">
 
-                        <label>
-                            Physical Activity
-                            <span>/ day</span>
+                        <label for="physical_activity_hours">
+                            Physical Activity Hours
                         </label>
 
                         <input
@@ -450,12 +387,10 @@
                     </div>
 
 
-
                     <div class="input-group">
 
-                        <label>
-                            Sleep
-                            <span>Hours / night</span>
+                        <label for="sleep_hours_per_night">
+                            Sleep Hours / Night
                         </label>
 
                         <input
@@ -471,10 +406,9 @@
                     </div>
 
 
-
                     <div class="input-group">
 
-                        <label>
+                        <label for="stress_level">
                             Stress Level
                         </label>
 
@@ -483,7 +417,7 @@
                             required
                         >
 
-                            <option value="">
+                            <option value="" disabled selected>
                                 Select stress level
                             </option>
 
@@ -509,147 +443,138 @@
 
                 </div>
 
-            </div>
+
+                <!-- BUTTON -->
+
+                <button
+                    type="submit"
+                    id="predictBtn"
+                    class="predict-btn"
+                >
+
+                    <span id="btnText">
+                        Predict My Score
+                    </span>
+
+                    <span class="arrow">
+                        →
+                    </span>
+
+                </button>
 
 
+                <!-- LOADING -->
 
-            <!-- BUTTON -->
+                <div
+                    id="loading"
+                    class="loading"
+                >
 
-            <button
-                type="submit"
-                id="predictBtn"
-                class="predict-button"
-            >
+                    <div class="spinner"></div>
 
-                <span>
-                    Predict Mental Health Score
+                    <span>
+                        AI is analyzing your information...
+                    </span>
+
+                </div>
+
+
+                <!-- ERROR -->
+
+                <div
+                    id="error"
+                    class="error-box"
+                ></div>
+
+            </form>
+
+        </section>
+
+
+        <!-- ================= RESULT ================= -->
+
+        <section
+            id="result"
+            class="result-card"
+        >
+
+            <div class="result-header">
+
+                <span class="section-label">
+                    AI PREDICTION RESULT
                 </span>
 
-                <span class="arrow">
-                    →
-                </span>
-
-            </button>
-
-
-        </form>
-
-    </section>
-
-
-
-    <!-- ================= LOADING ================= -->
-
-    <div id="loading"
-         class="loading hidden">
-
-        <div class="spinner"></div>
-
-        <p>
-            AI is analyzing your information...
-        </p>
-
-    </div>
-
-
-
-    <!-- ================= RESULT ================= -->
-
-    <section id="result"
-             class="result-card hidden">
-
-
-        <div class="result-header">
-
-            <div class="result-icon">
-                ✨
-            </div>
-
-            <div>
-
-                <h3>
-                    Prediction Complete
-                </h3>
-
-                <p>
-                    Your estimated mental health score
-                </p>
+                <h2>
+                    Your Mental Health Score
+                </h2>
 
             </div>
 
-        </div>
+
+            <div class="score-container">
+
+                <svg
+                    class="score-ring"
+                    viewBox="0 0 220 220"
+                >
+
+                    <circle
+                        class="score-bg"
+                        cx="110"
+                        cy="110"
+                        r="90"
+                    ></circle>
+
+                    <circle
+                        id="progressCircle"
+                        class="score-progress"
+                        cx="110"
+                        cy="110"
+                        r="90"
+                    ></circle>
+
+                </svg>
 
 
-        <div class="score-container">
+                <div class="score-content">
 
-            <div class="score-label">
-                Mental Health Score
+                    <span
+                        id="score"
+                        class="score-number"
+                    >
+                        0
+                    </span>
+
+                    <span class="score-out-of">
+                        / 10
+                    </span>
+
+                </div>
+
             </div>
 
-            <div id="score"
-                 class="score">
 
-                0.00
+            <p
+                id="message"
+                class="score-message"
+            ></p>
 
-            </div>
+        </section>
 
-            <div id="message"
-                 class="score-message">
+    </main>
 
-            </div>
-
-        </div>
-
-
-        <div class="result-note">
-
-            <span>💡</span>
-
-            This prediction is generated by a
-            machine learning model and should not
-            be considered a medical diagnosis.
-
-        </div>
-
-
-    </section>
-
-
-
-    <!-- ================= ERROR ================= -->
-
-    <div id="error"
-         class="error-card hidden">
-
-        ⚠️
-
-        <span>
-            Something went wrong.
-        </span>
-
-    </div>
-
-
-
-    <!-- ================= FOOTER ================= -->
 
     <footer>
-
         <p>
-            Built with ❤️ using
-            <strong>Python</strong>,
-            <strong>FastAPI</strong> &
-            <strong>Machine Learning</strong>
+            MindScore AI • Machine Learning Powered Prediction
         </p>
-
     </footer>
 
 
-</div>
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
-
 </html>
+`
+
+
